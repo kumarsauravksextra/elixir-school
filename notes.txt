@@ -1,0 +1,6 @@
+Compiling Erlang file.
+- Navigate to the folder which contain the erl files and type -> erl
+- c(fileName)
+- if successful beam file will be created.
+
+f(). is used to forget bound values.
