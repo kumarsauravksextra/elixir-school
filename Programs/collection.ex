@@ -36,6 +36,49 @@ defmodule Collection do
 
   # Tuples Examples
   def keywordListExample do
+    [{:name, "Kumar"},{:hello, "world"}]
+    #Output - [name: "Kumar", hello: "world"]
+    #Even though we have saved it as tuple but we got a list
+  end
 
+  # Maps Examples
+  def mapValueByKey do
+    map=%{"name" => "Kumar" , "hello" => "World"}
+    map["name"]
+  end
+
+  def mapVariableAsKey do
+    key="hello"
+    %{key => "world"}
+    # returns %{"hello" => "world"}
+  end
+
+  def mapDuplicateReplacesFormer do
+    %{:name => "Kumar" , :name => "Saurav"}
+    #%{name: "Saurav"}
+  end
+
+  def mapSecondWay do
+    map=%{:name => "Kumar", :hello => "World"}
+    map1=%{name: "Kumar", hello: "World"}
+    map==map1
+    #returns true
+  end
+
+  def mapAccessingAtomValue do
+    map=%{:name => "Kumar", :hello => "World"}
+    map.hello
+  end
+
+  def mapUpdating do
+    map=%{:hello => "World" , :name => "Kumar"}
+    %{map | :name => "Saurav"}
+    #returns %{hello: "World", name: "Saurav"}
+    #if key is not present in the map it will throw an error
+  end
+
+  def mapPuttingNewItem do
+    map=%{:name => "Kumar"}
+    Map.put(map,:hello,"world")
   end
 end

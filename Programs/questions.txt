@@ -1,0 +1,21 @@
+======Basics========
+Q1. Show concatination by combining Kumar and Saurav.
+Q2. Show string interpolation by displaying Hello Kumar Saurav.
+
+
+=====Collection=====
+list = [3.14,:pie,"Apple"]
+
+Q1. prepend "pi" in the list.
+Q2. append cherry in the list.
+Q3. concatinate a list=[10,20,"Mango"] with the above list
+Q4. find the head of the list.
+Q5. find the tail of the list.
+Q6. show that keyword tuple is finally converted into list.
+Q7. store name:kumar and hello:world as a map and f6ind the value of key name.
+Q8. show that a variable can be used as key of a map.
+Q9. show that duplicate value will replace the former value in map.
+Q10. compare the two forms of writing maps.
+Q11. show the way of accessing the value of key in a map if stored as atom.
+Q12. show how to update a map , change name from "Kumar" to "Saurav".
+Q13.Put a new value to the existing map.
